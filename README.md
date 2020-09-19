@@ -1,14 +1,91 @@
 # curved_fancy_navigationbar
 
-Fancy Bottom NavigationBar.
+Bottom NavigationBar with beautiful curved design.
 
-## Getting Started
+## video
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+<img align="left" src="https://raw.githubusercontent.com/MR0100/curved_fancy_navigationbar/master/assets/video/1.mov" width="300" height="600">
+<img src="https://raw.githubusercontent.com/MR0100/curved_fancy_navigationbar/master/assets/video/2.mov" width="300" height="600">
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## How to use
+
+* import following dependencies in pubspec.yaml
+<pre>
+  curved_fancy_navigationbar:
+    git:
+      url: https://github.com/MR0100/curved_fancy_navigationbar.git
+</pre>
+
+* explanations.
+  
+<pre>
+
+/// onChange : when select any icon
+
+CurvedFancyNavigationBar(
+  backgroundColor: Colors.lime,
+  iconSize: 28,
+  titleSize: 17.0,
+  onChange: (index) {
+    print(index);
+  },
+  iconTitle: [
+    'home', 
+    'notification', 
+    'varified', 
+    'timelapse'
+  ],
+  icons: [
+    Icons.home,
+    Icons.notifications_none,
+    Icons.verified_user,
+    Icons.timelapse
+  ],
+),
+</pre>
+
+
+## Example
+
+<pre>
+
+import 'package:curved_fancy_navigationbar/curved_fancy_navigationbar.dart';
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    return Scaffold(
+      bottomNavigationBar: CurvedFancyNavigationBar(
+        backgroundColor: Colors.lime,
+        iconSize: 28,
+        titleSize: 17.0,
+        onChange: (index) {
+          print(index);
+        },
+        iconTitle: ['home', 'notification', 'varified', 'timelapse'],
+        icons: [
+          Icons.home,
+          Icons.notifications_none,
+          Icons.verified_user,
+          Icons.timelapse
+        ],
+      ),
+    );
+  }
+}
+
+</pre>
