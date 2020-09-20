@@ -9,16 +9,16 @@ Bottom NavigationBar with beautiful curved design.
 
 ## How to use
 
-* import following dependencies in pubspec.yaml
-<pre>
+* import following dependencies in [pubspec.yaml](https://dart.dev/tools/pub/pubspec)
+```yaml
   curved_fancy_navigationbar:
     git:
       url: https://github.com/MR0100/curved_fancy_navigationbar.git
-</pre>
+```
 
 * explanations.
   
-<pre>
+```dart
 
 /// onChange : when select any icon
 
@@ -42,12 +42,12 @@ CurvedFancyNavigationBar(
     Icons.timelapse
   ],
 ),
-</pre>
+```
 
 
 ## Example
 
-<pre>
+```dart
 
 import 'package:curved_fancy_navigationbar/curved_fancy_navigationbar.dart';
 import 'package:flutter/material.dart';
@@ -88,4 +88,4 @@ class HomePage extends StatelessWidget {
   }
 }
 
-</pre>
+```
