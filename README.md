@@ -1,12 +1,7 @@
 # curved_fancy_navigationbar
-
+```
 Bottom NavigationBar with beautiful curved design.
-
-## video
-
-<img align="left" src="https://raw.githubusercontent.com/MR0100/curved_fancy_navigationbar/master/assets/video/1.mov" width="300" height="600">
-<img src="https://raw.githubusercontent.com/MR0100/curved_fancy_navigationbar/master/assets/video/2.mov" width="300" height="600">
-
+```
 ## How to use
 
 * import following dependencies in [pubspec.yaml](https://dart.dev/tools/pub/pubspec)
